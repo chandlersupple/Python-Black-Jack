@@ -122,12 +122,12 @@ class Play():                 # initializes class
                     if (move == 'hit'):
                         x5 = random.randint(0,12)
                         card4 = cards[x5]
-                        if (card3 == 'Jack'):
-                            card3 = 10
-                        if (card3 == 'Queen'):
-                            card3 = 10
-                        if (card3 == 'King'):
-                            card3 = 10
+                        if (card4 == 'Jack'):
+                            card4 = 10
+                        if (card4 == 'Queen'):
+                            card4 = 10
+                        if (card4 == 'King'):
+                            card4 = 10
                         card_v = card1 + card2 + card3 + card4
                         print("You got a %s" % card4)
                         if (card_v > 21):
