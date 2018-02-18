@@ -139,8 +139,8 @@ class Play():                 # initializes class
             sleep(1)
             print('Flip your cards!')
             sleep(2)
-            dealer = 21 - card_v
-            player = 21 - dealer_card
+            player = 21 - card_v
+            dealer = 21 - dealer_card
             if (dealer > player):
                 print("You won!")
                 player_money = player_money + bet
