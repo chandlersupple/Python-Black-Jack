@@ -25,6 +25,7 @@ class Play():                 # initializes class
     def __init__(self):       # main function
         while(1):
             global x
+            x = 0
             print('$50 was deducted from your account')
             global player_money
             player_money = player_money - 50
