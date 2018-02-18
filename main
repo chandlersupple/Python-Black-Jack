@@ -63,6 +63,19 @@ class Play():                 # initializes class
             if (card_d2 == 'Ace'):
                 card_d2 = 11
             dealer_card = int(card_d1) + int(card_d2)
+            if (dealer_card <= 9):
+                x5 = random.randint(0,13)
+                card_d3 = cards[x5]
+                if (card_d3 == 'Jack'):
+                    card_d3 = 10
+                if (card_d3 == 'Queen'):
+                    card_d3 = 10
+                if (card_d3 == 'King'):
+                    card_d3 = 10
+                if (card_d3 == 'Ace'):
+                    card_d3 = 11
+                dealer_card = int(card_d1) + int(card_d2) + int(card_d3)
+                
             print("Your cards are the following: %s" % card_s)
             sleep(1)
             if (str(card1) == 'Ace'):
