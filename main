@@ -1,6 +1,6 @@
 # Chandler Supple, 2/18/18
 # To initialize program, type 'Play()' in a seperate kernel
-#If you're using Python3, change 'rawinput' to 'input'
+# If you're using Python3, change 'rawinput' to 'input'
 
 # libraries
 import random   
