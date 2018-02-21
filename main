@@ -1,5 +1,6 @@
 # Chandler Supple, 2/18/18
 # To initialize program, type 'Play()' in a seperate kernel
+#If you're using Python3, change 'rawinput' to 'input'
 
 # libraries
 import random   
@@ -80,10 +81,10 @@ class Play():                 # initializes class
             print("Your cards are the following: %s" % card_s)
             sleep(1)
             if (str(card1) == 'Ace'):
-                ace_value = int(input('Please choose the value of your ace (1 or 11): '))
+                ace_value = int(rawinput('Please choose the value of your ace (1 or 11): '))
                 Ace = ace_value
             if (str(card2) == 'Ace'):
-                ace_value = int(input('Please choose the value of your ace (1 or 11): '))
+                ace_value = int(rawinput('Please choose the value of your ace (1 or 11): '))
                 Ace = ace_value
             if (card1 == 'Jack'):
                 card1 = 10
@@ -102,7 +103,7 @@ class Play():                 # initializes class
             if (card2 == 'Ace'):
                 card2 = ace_value
             card_v = card1 + card2
-            move = str(input('Would you like to fold/hit/stand: '))
+            move = str(rawinput('Would you like to fold/hit/stand: '))
             if (move == 'hit'):
                 while (move == 'hit'):
                     x5 = random.randint(0,12)
@@ -119,7 +120,7 @@ class Play():                 # initializes class
                         print("Bust!")
                         x = 1
                         break
-                    move = str(input('Would you like to fold/hit/stand: '))
+                    move = str(rawinput('Would you like to fold/hit/stand: '))
                     if (move == 'hit'):
                         x5 = random.randint(0,12)
                         card4 = cards[x5]
@@ -135,7 +136,7 @@ class Play():                 # initializes class
                             print("Bust!")
                             x = 1
                             break
-                        move = str(input('Would you like to fold/hit/stand: '))
+                        move = str(rawinput('Would you like to fold/hit/stand: '))
                         if (move == 'hit'):
                             x5 = random.randint(0,12)
                             card5 = cards[x5]
@@ -151,7 +152,7 @@ class Play():                 # initializes class
                                 print("Bust!")
                                 x = 1
                                 break
-                            move = str(input('Would you like to fold/hit/stand: '))
+                            move = str(rawinput('Would you like to fold/hit/stand: '))
                 if (x == 1):
                     break
             if (move == 'fold'):
@@ -161,7 +162,7 @@ class Play():                 # initializes class
                 pass
             sleep(1)
             while(1):
-                bet = int(input('Please place your bet: $'))
+                bet = int(rawinput('Please place your bet: $'))
                 if (bet > player_money):
                     print("You do not have enough money to place that bet!")
                 if (bet <= player_money):
